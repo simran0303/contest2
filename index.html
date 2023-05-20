@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Books</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section>
+            <nav class="navbar">
+                <a href="#"> Library System </a>
+                <a href="#"> Books </a>
+                <a href="#"> Register </a>
+                <a href="#"> Contact Us </a>
+                <a href="#"> Logout </a>
+            </nav>
+            <br>
+        </section>
+        <section>
+            <h1>Books</h1>
+            <table border="1" cellspacing="0" cellpadding = "16">
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <a href="#">Book Title 1</a>
+                            <br>
+                            <table border="3" cellspacing = "0" cellpadding = "10">
+                                <tr>
+                                    <td>Publication Date: 2000</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:250</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 123-4567890123 </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Author Name 1</td>
+                        <td>Genre 1</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <a href="#">Book Title 2</a>
+                            <br>
+                            <table border="3" cellspacing = "0" cellpadding = "10">
+                                <tr>
+                                    <td>Publication Date: 2005</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:300</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 123-4567890456 </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Author Name 2</td>
+                        <td>Genre 2</td>
+                        <td>Not Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <a href="#">Book Title 3</a>
+                            <br>
+                            <table border="3" cellspacing = "0" cellpadding = "10">
+                                <tr>
+                                    <td>Publication Date: 2010</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:350</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 123-4567890789 </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Author Name 3</td>
+                        <td>Genre 3</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="two">
+            <h1>Register</h1>
+            <form action = "file_path.js" method ="POST">
+                <div>
+                    <lable for="fname">First Name:</lable><br>
+                    <input type = "text" name="fname" id="fname" required placeholder="Enter your first name" >
+                </div>
+                <div>
+                    <lable for="lname">Last Name:</lable><br>
+                    <input type = "text" required name="lname" id="lname" placeholder="Enter your last name">
+                </div>
+                <div>
+                    <lable for = "dob">Date of Birth</lable><br>
+                    <input type="date" required name="dob" id="dob">
+                </div>
+                <div>
+                    <lable for = "age">Age:</lable><br>
+                    <input type = "number" max="100" min="5" name="age" id="age" required >
+                </div>
+                <div>
+                    <lable for = "email">Email:</lable><br>
+                    <input type = "email" pattern ="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required name="email" id="email" placeholder="Enter valid email id">
+                </div>
+                <div>
+                    <lable for="password">Password:</lable><br>
+                    <input type = "password" required name="password" id="password" >
+                </div>
+                <div>
+                    <lable for="password confirm">Confirm Password</lable><br>
+                    <input type = "password" required>
+                </div>
+                <div>
+                    <button type ="submit" class="Registerbtn">Register</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>

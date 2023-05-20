@@ -1,0 +1,35 @@
+.navbar{
+    background-color: black;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    padding:15px ;
+    float:left;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:antiquewhite;
+    border-right :2px solid #e1dcdc;
+    padding:16px;
+}
+
+
+input[type="password"]{
+    background-color: rgb(20, 174, 177);
+}
+
+tr{
+    background-color:khaki;
+    color:black;
+}
+
+th{
+    background-color: brown;
+    color:azure;
+}
+
+.two{
+    background-color: rgb(187, 211, 187);
+}
+
